@@ -16,6 +16,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url(./clouds.png);
+  background-position: center;
 }
 
 .App-link {
