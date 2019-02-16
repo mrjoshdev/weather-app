@@ -4,7 +4,7 @@ import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
 
-const API_KEY = "404650b9f303b6a9dd551f3f51e0b78d"
+const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY
 
 class App extends Component {
 
@@ -20,7 +20,7 @@ class App extends Component {
   getWeather = async (e) => {
     e.preventDefault();
     const zipcode = e.target.elements.zipcode.value;
-    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},us&APPID=${API_KEY}&units=imperial`)
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},us&APPID=${REACT_APP_API_KEY}&units=imperial`)
 
     const data = await api_call.json();
     if (zipcode) {
