@@ -68,4 +68,19 @@ class App extends Component {
   }
 };
 
+/*{<div className="App">
+  <div className="App-header">
+    <Titles />
+    <Form getWeather={this.getWeather}/>
+    <Weather
+    temperature={this.state.temperature}
+    city={this.state.city}
+    country={this.state.country}
+    humidity={this.state.humidity}
+    description={this.state.description}
+    error={this.state.error}
+    />
+  </div>
+</div>}*/
+
 export default App;
