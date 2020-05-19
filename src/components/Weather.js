@@ -1,16 +1,13 @@
 import React from 'react';
+import '../foundation.css';
 
 const Weather = (props) => {
     return(
-      <div className='weather__info'>
-      {props.city && props.country && <p>Location: {props.city}, {props.country}</p>
-      }
-      {props.temperature && <p>Temp: {Math.round(props.temperature)} F</p>
-      }
-      {props.humidity && <p>Humidity: {props.humidity}%</p>
-      }
-      {props.description && <p>Conditions: {props.description}</p>
-      }
+      <div>
+      {props.city && props.country && <p>Location: {props.city}, {props.country}</p>}
+      {props.temperature && <p>Temp: {Math.round(props.temperature)} F</p>}
+      {props.humidity && <p>Humidity: {props.humidity}</p>}
+      {props.description && <p>Conditions: {props.description}</p>}
       {props.error && <p>{props.error}</p>}
       </div>
     );

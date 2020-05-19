@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './foundation.css';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
@@ -20,11 +20,10 @@ class App extends Component {
   getWeather = async (e) => {
     e.preventDefault();
     const zipcode = e.target.elements.zipcode.value;
-    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},us&APPID=${REACT_APP_API_KEY}&units=imperial`)
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},US&APPID=${REACT_APP_API_KEY}&units=imperial`)
 
     const data = await api_call.json();
-    if (zipcode) {
-    console.log(data);
+    if (zipcode && data["cod"] !== "404" ) {
     this.setState({
       temperature: data.main.temp,
       city: data.name,
@@ -47,25 +46,20 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <div className='wrapper'>
-          <div className='main'>
-            <div className='container'>
-              <div className='row'></div>
-                <div className='col-xs-5 title-container'>
-                  <Titles/>
-                </div>
-                <div className='col-xs-7 form-container'>
-                <Form getWeather={this.getWeather}/>
-                <Weather
-                temperature={this.state.temperature}
-                city={this.state.city}
-                country={this.state.country}
-                humidity={this.state.humidity}
-                description={this.state.description}
-                error={this.state.error}
-                />
-                </div>
+      <div className="App">
+        <div className="App-header">
+          <div className="row">
+            <div className="medium-8 large-4 columns">
+              <Titles />
+              <Form getWeather={this.getWeather}/>
+              <Weather
+              temperature={this.state.temperature}
+              city={this.state.city}
+              country={this.state.country}
+              humidity={this.state.humidity}
+              description={this.state.description}
+              error={this.state.error}
+              />
             </div>
           </div>
         </div>
