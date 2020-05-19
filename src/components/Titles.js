@@ -1,4 +1,5 @@
 import React from 'react';
+import '../foundation.css';
 
 const Titles = () => {
     return (
