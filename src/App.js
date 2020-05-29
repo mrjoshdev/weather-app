@@ -54,7 +54,7 @@ class App extends Component {
       country: undefined,
       humidity: undefined,
       description: undefined,
-      icon: url + "10d@2x.png",
+      icon: undefined,
       error: "Please enter a correct zipcode"
     })
   }
