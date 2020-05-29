@@ -13,8 +13,15 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title-container {
+ height: 90vh;
+ background: url("img/peaceful_weather.jpeg") center center no-repeat;
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ color: #000;
 }
 
 #search-button {
