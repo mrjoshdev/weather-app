@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import './App.css';
 import './foundation.css';
+import './foundation-float.css';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
@@ -49,20 +51,28 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <div className="row">
-            <div className="medium-8 large-4 columns">
+            <div className="medium-8 large-8 columns">
               <Titles />
               <Form getWeather={this.getWeather}/>
-              <Weather
-              temperature={this.state.temperature}
-              city={this.state.city}
-              country={this.state.country}
-              humidity={this.state.humidity}
-              description={this.state.description}
-              error={this.state.error}
-              />
             </div>
           </div>
         </div>
+        <body>
+          <div class="row">
+            <div class="weather-block small-6 columns">
+            <span>
+                <Weather
+                temperature={this.state.temperature}
+                city={this.state.city}
+                country={this.state.country}
+                humidity={this.state.humidity}
+                description={this.state.description}
+                error={this.state.error}
+                />
+                </span>
+            </div>
+          </div>
+        </body>
       </div>
     );
   }

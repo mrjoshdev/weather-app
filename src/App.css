@@ -1,51 +1,51 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  text-align: left;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-position: center;
-  background-color: #1C2541;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#search-button {
+  border-radius: 100rem;
+  color: #282c34;
+  background-color: #fff;
+  padding: .5rem 2rem;
+  border: 1rem;
+  margin: 0 .5rem 1.5rem 0;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
-
-.animated-search-form[type=search] {
-  width: 10rem;
-  border: 0.125rem solid #e6e6e6;
-  box-shadow: 0 0 3.125rem rgba(0, 0, 0, 0.18);
-  border-radius: 0;
-  background-image: url("https://image.ibb.co/i7NbrQ/search_icon_15.png");
-  background-position: 0.625rem 0.625rem;
-  background-repeat: no-repeat;
-  padding: 0.75rem 1.25rem 0.75rem 2rem;
-  transition: width 0.4s ease-in-out;
+.weather-block {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, #091540, #ABD2FA);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+  text-align: left;
 }
 
-.animated-search-form[type=search]:focus {
-  width: 100%;
+.u-left-text {
+  text-align: left;
+}
+
+#zip {
+  border-radius: 100rem;
 }

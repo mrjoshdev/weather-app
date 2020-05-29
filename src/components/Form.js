@@ -1,15 +1,12 @@
 import React from 'react';
+import '../App.css';
 import '../foundation.css';
 
 const Form = props => {
     return(
       <form onSubmit={props.getWeather}>
-        <div className="row">
-          <div class="small-2 medium-3 large-4 columns">
-            <input id='zip' type='text' name='zipcode' placeholder='Zipcode...' inputMode="numeric" maxLength="5" minLength="5"/>
-            <button className="button" type="submit">Get Weather</button>
-          </div>
-        </div>
+            <input id='zip' type='text' name='zipcode' placeholder='Zipcode...'/>
+            <button id="search-button" type="submit">Get Weather</button>
       </form>
     );
 };

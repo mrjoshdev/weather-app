@@ -1,5 +1,6 @@
 import React from 'react';
 import '../foundation.css';
+import '../App.css';
 
 const Weather = (props) => {
     return(
