@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import './foundation.css';
 import './foundation-float.css';
+import './background-images.css'
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
+import './background-images.css'
 
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY
 
@@ -17,18 +19,9 @@ class App extends Component {
     humidity: undefined,
     description: undefined,
     icon: undefined,
+    id: undefined,
     error: undefined
   }
-
-  /*this.icon = {
-    Thunderstorm: "wi-hunderstorm",
-    Drizzle: "wi-sleet",
-    Rain: "wi-storm-showers",
-    Snow: "wi-snow",
-    Atmosphere: "wi-fog",
-    Clear: "wi-day-sunny",
-    Clouds: "wi-day-fog"
-  };*/
 
   getWeather = async (e) => {
     e.preventDefault();
@@ -45,6 +38,7 @@ class App extends Component {
       humidity: data.main.humidity,
       description: data.weather[0].description,
       icon: url + data.weather[0].icon + "@2x.png",
+      id: data.weather[0].id,
       error: ""
     });
   } else {
@@ -55,6 +49,7 @@ class App extends Component {
       humidity: undefined,
       description: undefined,
       icon: undefined,
+      id: undefined,
       error: "Please enter a correct zipcode"
     })
   }
@@ -65,15 +60,16 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <div className="row">
-            <div className="medium-8 large-8 columns">
+            <div className="medium-8 large-12 columns">
               <Titles />
               <Form getWeather={this.getWeather}/>
             </div>
           </div>
         </div>
         <body>
-          <div class="row">
-            <div class="weather-block small-6 large-6 columns">
+          <div className={this.state.description}>
+          <div className="row">
+            <div className="weather-block small-6 large-6 columns">
               <span>
                   <Weather
                   temperature={this.state.temperature}
@@ -85,21 +81,13 @@ class App extends Component {
                   />
               </span>
             </div>
-            <div class="icon-block small-2 large-2 columns">
+            <div className="icon-block small-2 large-2 columns">
               <Weather
-              icon={this.state.icon}
+                icon={this.state.icon}
+                id={this.state.id}
               />
             </div>
-            <div class="icon-block small-2 large-2 columns">
-              <Weather
-              icon={this.state.icon}
-              />
-            </div>
-            <div class="icon-block small-2 large-2 columns">
-              <Weather
-              icon={this.state.icon}
-              />
-            </div>
+          </div>
           </div>
         </body>
       </div>
@@ -107,19 +95,21 @@ class App extends Component {
   }
 };
 
+//  <div className={(typeof this.state.id != "undefined") ? ((this.state.id > 500) ? "rain" : "body") : "body"}>
+
 /*{<div className="App">
-  <div className="App-header">
-    <Titles />
-    <Form getWeather={this.getWeather}/>
-    <Weather
-    temperature={this.state.temperature}
-    city={this.state.city}
-    country={this.state.country}
-    humidity={this.state.humidity}
-    description={this.state.description}
-    error={this.state.error}
-    />
-  </div>
+<div className="App-header">
+<Titles />
+<Form getWeather={this.getWeather}/>
+<Weather
+temperature={this.state.temperature}
+city={this.state.city}
+country={this.state.country}
+humidity={this.state.humidity}
+description={this.state.description}
+error={this.state.error}
+/>
+</div>
 </div>}*/
 
 export default App;

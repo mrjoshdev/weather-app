@@ -1,21 +1,19 @@
 .App {
   text-align: left;
+  transition: 0.4 ease-out;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(to right, #f20089, #ABD2FA);
   color: white;
 }
 
 .title-container {
  height: 90vh;
- background: url("img/peaceful_weather.jpeg") center center no-repeat;
  background-size: cover;
  display: flex;
  align-items: center;
@@ -39,9 +37,9 @@
   margin-top: 20px;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   display: inline-block;
-  background-image: linear-gradient(to right, #091540, #ABD2FA);
+  background-image: linear-gradient(to right, #f20089, #ABD2FA);
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 2px;
@@ -69,4 +67,9 @@
 
 #zip {
   border-radius: 100rem;
+  width: 8rem;
 }
+
+/*.body {
+  background-image: url("./img/rain.jpg");
+}*/
