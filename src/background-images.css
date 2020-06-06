@@ -1,35 +1,48 @@
 .rain {
   background-image: url("./img/rain.jpg");
-  height: 50rem;
-  object-fit: cover;
+  height: 40rem;
+  background-size: cover;
 }
 
 .clear {
   background-image: url("./img/clear-sky.jpg");
-  height: 50rem;
-  object-fit: cover;
+  height: 40rem;
+  background-size: cover;
 }
 
 .clouds {
   background-image: url("./img/clouds2.jpg");
-  height: 50rem;
-  object-fit: cover;
+  height: 40rem;
+  background-size: cover;
 }
 
 .fog {
   background-image: url("./img/fog.jpg");
-  height: 50rem;
-  object-fit: cover;
+  height: 40rem;
+  background-size: cover;
 }
 
 .lightning {
   background-image: url("./img/lightning.jpg");
-  height: 50rem;
-  object-fit: cover;
+  height: 40rem;
+  background-size: cover;
 }
 
 .snow {
   background-image: url("./img/snow.jpg");
-  height: 50rem;
-  object-fit: cover;
+  height: 40rem;
+  background-size: cover;
+}
+
+.logo {
+  background-image: url("./img/logo.png");
+  background-repeat: no-repeat;
+  height: 7rem;
+  width: 10rem;
+  background-size: 70%;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  margin: 1rem;
+  float: left;
 }

@@ -6,7 +6,8 @@ import './background-images.css'
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
-import './background-images.css'
+import './background-images.css';
+import './img/logo.png';
 
 const REACT_APP_API_KEY = process.env.REACT_APP_API_KEY
 
@@ -60,15 +61,23 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <div className="row">
-            <div className="medium-8 large-12 columns">
+            <div className="small-8 medium-6 large-6 columns">
+            <span>
               <Titles />
               <Form getWeather={this.getWeather}/>
+            </span>
+            </div>
+            <div className="small- 12 medium-6 large-6 columns">
+            <span>
+            <div className="logo">
+            </div>
+            </span>
             </div>
           </div>
         </div>
         <body>
           <div className={this.state.description}>
-          <div className="row">
+          <div className="row layer">
             <div className="weather-block small-6 large-6 columns">
               <span>
                   <Weather
