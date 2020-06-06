@@ -831,9 +831,9 @@ ul.no-bullet, ol.no-bullet {
     page-break-inside: auto; } }
 
 .row {
-  max-width: 75rem;
-  margin-right: auto;
-  margin-left: auto; }
+  max-width: 100rem;
+  margin-right: 0;
+  margin-left: 0; }
   .row::before, .row::after {
     display: table;
     content: ' '; }
