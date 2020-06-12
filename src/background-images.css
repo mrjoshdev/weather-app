@@ -38,11 +38,12 @@
   background-image: url("./img/logo.png");
   background-repeat: no-repeat;
   height: 7rem;
-  width: 10rem;
+  width: 100%;
   background-size: 70%;
   animation-name: moveInRight;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  margin: 1rem;
-  float: left;
+  margin: 2rem 2rem 2rem 2rem;
+  float: right;
+  max-width: 10rem;
 }

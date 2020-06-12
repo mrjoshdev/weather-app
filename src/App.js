@@ -67,7 +67,7 @@ class App extends Component {
               <Form getWeather={this.getWeather}/>
             </span>
             </div>
-            <div className="small- 12 medium-6 large-6 columns">
+            <div className="small-2 medium-6 large-6 columns">
             <span>
             <div className="logo">
             </div>
@@ -78,7 +78,7 @@ class App extends Component {
         <body>
           <div className={this.state.description}>
           <div className="row layer">
-            <div className="weather-block small-6 large-6 columns">
+            <div className="weather-block small-12 large-12 columns">
               <span>
                   <Weather
                   temperature={this.state.temperature}
@@ -103,22 +103,5 @@ class App extends Component {
     );
   }
 };
-
-//  <div className={(typeof this.state.id != "undefined") ? ((this.state.id > 500) ? "rain" : "body") : "body"}>
-
-/*{<div className="App">
-<div className="App-header">
-<Titles />
-<Form getWeather={this.getWeather}/>
-<Weather
-temperature={this.state.temperature}
-city={this.state.city}
-country={this.state.country}
-humidity={this.state.humidity}
-description={this.state.description}
-error={this.state.error}
-/>
-</div>
-</div>}*/
 
 export default App;
