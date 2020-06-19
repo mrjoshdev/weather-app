@@ -67,11 +67,9 @@
 }
 
 .layer {
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 20rem;
+  height: 100vh;
+  background-image: linear-gradient(#fff, transparent);
 }
 
 .weather-block {
@@ -80,9 +78,9 @@
   text-transform: uppercase;
   font-weight: 800;
   display: inline-block;
-  background-image: linear-gradient(to right, #f20089, #ABD2FA);
-  -webkit-background-clip: text;
-  color: transparent;
+  /*background-image: linear-gradient(to right, #f20089, #ABD2FA);
+  -webkit-background-clip: text;*/
+  color: #f20089;
   letter-spacing: 2px;
   transition: all .2s;
   text-align: center;
@@ -106,9 +104,9 @@
   text-align: left;
 }
 
-#zip {
+#input {
   border-radius: 100rem;
-  width: 8rem;
+  width: 14rem;
 }
 
 #temp {
