@@ -26,12 +26,13 @@ class App extends Component {
 
   getWeather = async (e) => {
     e.preventDefault();
-    const zipcode = e.target.elements.zipcode.value;
-    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zipcode},US&APPID=${REACT_APP_API_KEY}&units=imperial`)
+    const cityname = e.target.elements.cityname.value;
+    const country = e.target.elements.country.value;
+    const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${cityname},US&APPID=${REACT_APP_API_KEY}&units=imperial`)
     const url = "http://openweathermap.org/img/wn/"
 
     const data = await api_call.json();
-    if (zipcode && data["cod"] !== "404" ) {
+    if (cityname && data["cod"] !== "404" ) {
     this.setState({
       temperature: data.main.temp,
       city: data.name,
@@ -51,7 +52,7 @@ class App extends Component {
       description: undefined,
       icon: undefined,
       id: undefined,
-      error: "Please enter a correct zipcode"
+      error: "Please enter a correct City or Country ID"
     })
   }
   }
