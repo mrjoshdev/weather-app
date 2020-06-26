@@ -57,14 +57,22 @@
 
 #search-button {
   border-radius: 100rem;
-  color: #282c34;
+  color: #f20089;
   background-color: #fff;
   padding: .5rem 2rem;
   border: 1rem;
   margin: 0 .5rem 1.5rem 0;
   font-size: 1rem;
   font-weight: 400;
+  outline: none;
+  font-weight: bold;
+  transform: translateY(-2px);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 }
+
+#search-button:active {
+    transform: translateY(0px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .layer {
   width: 100%;
@@ -110,7 +118,11 @@
 }
 
 #temp {
-  font-size: 4rem;
+  font-size: 5rem;
+}
+
+#city {
+  font-size: 2rem;
 }
 
 /*.body {
