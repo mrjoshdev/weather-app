@@ -1,8 +1,24 @@
+# [Weather Party](weather-party.herokuapp.com)
+
+Weather Party is a Single Page Application that I built to become better at working with APIs and CSS. This app was built using React and interacts with an API pulled from www.openweathermap.org to provide up to date weather for the entered US zipcode. I strove to create a simple design, and made the background image dynamic to reflect the current weather conditions.
+
+### Tools Used
+<b>Built with:</b>
+- [React v16.7.0](https://reactjs.org/)
+- [OpenWeatherMap API](https://api.openweathermap.org/data/2.5/weather?zip=94040,us)
+- [Heroku](https://www.heroku.com/)
+
+### User Story
+
+Users can navigate to the index page where they are able to click in the input field and enter a five digit US zipcode, then click on the 'Get Weather' button. The following information will then be shown in the body of the page: City, Conditions, Temperature and Humidity. The background will also change to reflect the current conditions.
+
+### Installation
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+After downloading this project to your local machine, in the project directory, you can run:
 
 ### `npm start`
 
@@ -37,8 +53,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Screenshot
+##### Main Page - Portfolio Tracker
+![Main Page](https://imgur.com/mBjy11Z)
