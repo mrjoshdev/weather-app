@@ -1,4 +1,4 @@
-# [Weather Party](weather-party.herokuapp.com)
+# [Weather Party](https://weather-party.herokuapp.com)
 
 Weather Party is a Single Page Application that I built to become better at working with APIs and CSS. This app was built using React and interacts with an API pulled from www.openweathermap.org to provide up to date weather for the entered US zipcode. I strove to create a simple design, and made the background image dynamic to reflect the current weather conditions.
 
