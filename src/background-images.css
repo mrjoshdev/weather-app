@@ -1,4 +1,4 @@
-.rain {
+.rain, .thunderstorm, .drizzle {
   background-image: url("./img/rain.jpg");
   height: 100vh;
   background-size: cover;
@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.clouds {
+.clouds, .atmosphere {
   background-image: url("./img/clouds2.jpg");
   height: 100vh;
   background-size: cover;
