@@ -1,0 +1,25 @@
+.layer {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient($color-white, transparent);
+}
+
+.weather-block {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  display: inline-block;
+  color: $color-pink;
+  letter-spacing: 2px;
+  transition: all .2s;
+  text-align: center;
+}
+
+#temp {
+  font-size: 5rem;
+}
+
+#city {
+  font-size: 2rem;
+}

@@ -1,0 +1,14 @@
+@import "abstracts/variables";
+
+@import "base/animations";
+
+@import "components/buttons";
+@import "components/icon";
+@import "components/input";
+
+@import "layout/header";
+@import "layout/body";
+
+.App {
+  transition: 0.4 ease-out;
+}
