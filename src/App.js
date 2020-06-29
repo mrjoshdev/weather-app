@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
-import './foundation.css';
-import './foundation-float.css';
+import './sass/app.scss';
+
+
+
+import './foundation/foundation.css';
+import './foundation/foundation-float.css';
 import './background-images.css'
 import Titles from './components/Titles';
 import Form from './components/Form';

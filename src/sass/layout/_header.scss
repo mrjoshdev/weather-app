@@ -1,0 +1,30 @@
+.App-header {
+  min-height: 10vh;
+  font-size: calc(10px + 2vmin);
+  background-image: linear-gradient(to right, $color-pink, $color-blue);
+  color: $color-white;
+}
+
+.title-container {
+ height: 90vh;
+ background-size: cover;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ color: $color-black;
+
+ &__title{
+   letter-spacing: 3px;
+   font-weight: 800;
+   animation-name: moveInLeft;
+   animation-duration: 1s;
+   animation-timing-function: ease-out;
+ }
+
+ &__subtitle{
+   animation-name: moveInRight;
+   animation-duration: 1s;
+   animation-timing-function: ease-out;
+ }
+}

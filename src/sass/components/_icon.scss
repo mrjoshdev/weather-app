@@ -1,0 +1,13 @@
+.icon-block {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  background-image: linear-gradient(to right, $color-pink, $color-blue);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all .2s;
+  text-align: left;
+}
