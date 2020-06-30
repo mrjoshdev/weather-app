@@ -3,7 +3,7 @@ import React from 'react';
 const Form = props => {
     return(
       <form onSubmit={props.getWeather}>
-            <input id='input' type='text' name='cityname' pattern='[0-9]*' placeholder='Zipcode...' />
+            <input id='input' type='text' name='cityname' pattern='[0-9]*' placeholder='zip code...' />
             <button id="search-button" type="submit">Get Weather</button>
       </form>
     );
