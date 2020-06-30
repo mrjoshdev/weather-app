@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import './sass/app.scss';
 
-
-
 import './foundation/foundation.css';
 import './foundation/foundation-float.css';
 import './background-images.css'
@@ -65,21 +63,21 @@ class App extends Component {
         <div className="App-header">
           <div className="row">
             <div className="small-8 medium-6 large-6 columns">
-            <span>
-              <Titles />
-              <Form getWeather={this.getWeather}/>
-            </span>
+              <span>
+                <Titles />
+                <Form getWeather={this.getWeather}/>
+              </span>
             </div>
-            <div className="small-2 medium-6 large-6 columns">
-            <span>
-            <div className="logo">
-            </div>
-            </span>
-            </div>
+              <div className="small-2 medium-6 large-6 columns">
+                <span>
+                  <div className="logo">
+                  </div>
+                </span>
+              </div>
           </div>
         </div>
-        <body>
-          <div className={this.state.description}>
+
+        <div className={this.state.description}>
           <div className="row layer">
             <div className="weather-block small-12 large-12 columns">
               <span>
@@ -100,8 +98,8 @@ class App extends Component {
               />
             </div>
           </div>
-          </div>
-        </body>
+        </div>
+
       </div>
     );
   }
